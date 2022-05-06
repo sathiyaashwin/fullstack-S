@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-04-19T11:57:40</date>
+  <millis>1650349660975</millis>
+  <sequence>0</sequence>
+  <logger>com.example.LogToFile</logger>
+  <level>INFO</level>
+  <class>com.example.LogToFile</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Try Block Called</message>
+</record>
+</log>
