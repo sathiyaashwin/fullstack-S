@@ -9,7 +9,7 @@ public class Application {
 		System.out.println(obj.getMessage());
 		System.out.println("tata");
 		System.out.println(Greetings.getInfo());
-		System.out.println(obj.getInfo());
+		//System.out.println(obj.getInfo());
 
 	}
 
