@@ -28,10 +28,10 @@ public class CreditCardService {
 		return this.repo.findAll();
 	}
 
-	@Cacheable(value = "card",key = "#cardNumber")
-	public CreditCard getById(long id) {
+	@Cacheable(value = "cards",key = "#cardNumber")
+	public CreditCard getById(long cardNumber) {
 		
-		return this.repo.findById(id).orElseThrow(()-> new RuntimeException("not found"));
+		return this.repo.findById(cardNumber).orElseThrow(()-> new RuntimeException("not found"));
 	}
 
 	@CachePut(value = "card",key = "#entity.cardNumber")

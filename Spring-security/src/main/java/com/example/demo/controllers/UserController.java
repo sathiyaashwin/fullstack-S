@@ -1,6 +1,6 @@
 package com.example.demo.controllers;
 
-import java.security.Principal;
+
 
 import javax.annotation.security.RolesAllowed;
 
@@ -39,5 +39,5 @@ public class UserController {
 			return "Manager Leo";
 		}
 	}
-
+  
 }

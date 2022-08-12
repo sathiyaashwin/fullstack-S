@@ -1,0 +1,5 @@
+projectKey=com.example:Spring-security
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/com.example:Spring-security
+ceTaskId=AYJnZZKoSjuFU26A4IgA
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYJnZZKoSjuFU26A4IgA
