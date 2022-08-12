@@ -1,0 +1,5 @@
+projectKey=org.example:unit-testing
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/org.example:unit-testing
+ceTaskId=AYJs2J-el-e9V4f89xN9
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYJs2J-el-e9V4f89xN9
