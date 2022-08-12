@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: actuator-example
+    
+info:
+  app:
+    name: ${spring.application.name}
+    author: Java Expert
+  build:
+    artifactId: 'com.example:Spring-Boot-Actuator:jar:0.0.1-SNAPSHOT'
+    groupId: 'com.example'
+    version: '@project.version'
+  java:
+    version:1.8.0_172
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+     
+  endpoint:
+    health:
+      show-details: always
+      
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: true
