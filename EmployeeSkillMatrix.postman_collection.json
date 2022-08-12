@@ -1,0 +1,652 @@
+{
+	"info": {
+		"_postman_id": "0f65e627-fb1d-4683-bfb6-e01e9f53483c",
+		"name": "EmployeeSkillMatrix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EmployeeDetails",
+			"item": [
+				{
+					"name": "Associate",
+					"item": [
+						{
+							"name": "http://localhost:2022/api/v1/employees/associate",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "e16b4a5c-9a50-42da-a20e-2112be4970a5",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Manager\":\"Kamala\",\r\n    \"EmpIDs\":\"1115,111\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2022/api/v1/employees/associate",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2022",
+									"path": [
+										"api",
+										"v1",
+										"employees",
+										"associate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2022/api/v1/employees",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "c65b9479-2f60-41ba-b1e7-81e43cffa34c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2022/api/v1/employees",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "e16b4a5c-9a50-42da-a20e-2112be4970a5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empId\": 1117,\r\n    \"empName\": \"Selva\",\r\n    \"empDesginationId\": 105,\r\n    \"empDoj\": \"2010-03-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2022/api/v1/employees",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "20186d88-e6d9-441f-93db-f7b01ae2bf73",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empId\": 1187,\r\n    \"empName\": \"Vimala\",\r\n    \"empDesginationId\": 103,\r\n    \"empDoj\": \"2010-03-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SkillReference",
+			"item": [
+				{
+					"name": "http://localhost:2022/api/v1/skills",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "e777585e-28f4-4126-9003-dce47f99d547",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skillName\":\"Oracle\",\r\n    \"skillType\":\"Development\",\r\n    \"createdDate\":\"2022-10-10\",\r\n    \"createdBy\":\"kanniga\",\r\n    \"createdTime\":\"12:04:26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/skills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2022/api/v1/skills",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "20186d88-e6d9-441f-93db-f7b01ae2bf73",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/skills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"skills"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EmployeeSkills",
+			"item": [
+				{
+					"name": "http://localhost:2022/api/v1/empskills",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "e5198a0b-1631-417a-af91-21dc07ed630b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/empskills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"empskills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2022/api/v1/empskills",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "28135715-eed1-4639-b3e2-e58fb1c674b3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empId\":1115,\r\n    \"skillName\":\"Oracle\",\r\n    \"skillExperience\":18\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/empskills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"empskills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2022/api/v1/empskills",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "cf29e024-5bf3-47b9-b54d-a06fa6ddaa6e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empId\":1115,\r\n    \"skillName\":\"Oracle\",\r\n    \"skillExperience\":18\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/empskills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"empskills"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ManagerWorkFlow",
+			"item": [
+				{
+					"name": "http://localhost:2022/api/v1/manager/Kamala",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "cf29e024-5bf3-47b9-b54d-a06fa6ddaa6e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2022/api/v1/manager/Kamala",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"manager",
+								"Kamala"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SkillApproval",
+			"item": [
+				{
+					"name": "http://localhost:2022/api/v1/skillApproval?EmployeeName=Rohit&Status=APPROVED",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "20186d88-e6d9-441f-93db-f7b01ae2bf73",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2022/api/v1/skillApproval?EmployeeName=Rohit&Status=APPROVED",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"skillApproval"
+							],
+							"query": [
+								{
+									"key": "EmployeeName",
+									"value": "Rohit"
+								},
+								{
+									"key": "Status",
+									"value": "APPROVED"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SearchBySkillNameAndExperience",
+			"item": [
+				{
+					"name": "http://localhost:2022/api/v1/search?skillName=Java&experience=12",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "cf29e024-5bf3-47b9-b54d-a06fa6ddaa6e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skillName\": \"Oracle\",\r\n    \"skillExperience\": 18\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/search?skillName=Java&experience=12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"search"
+							],
+							"query": [
+								{
+									"key": "skillName",
+									"value": "Java"
+								},
+								{
+									"key": "experience",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SearchByName,ApprovedByAndStatus",
+			"item": [
+				{
+					"name": "http://localhost:2022/api/v1/searchInput Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "e5198a0b-1631-417a-af91-21dc07ed630b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empName\":\"Vanmathi\",\r\n    \"status\": \"APPROVED\",\r\n    \"approvedBy\":\"Rohit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2022/api/v1/searchInput",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2022",
+							"path": [
+								"api",
+								"v1",
+								"searchInput"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TransactionalLog",
+			"item": []
+		},
+		{
+			"name": "AccessToken",
+			"item": [
+				{
+					"name": "http://localhost:4040/oauth/token",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "pass123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "myclient",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Srivatsan",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "nslcif@122",
+									"type": "default"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4040/oauth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
