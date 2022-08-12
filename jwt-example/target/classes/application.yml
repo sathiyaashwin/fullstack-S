@@ -1,0 +1,5 @@
+jwt:
+  secret: training
+  
+server:
+  port: 2323
