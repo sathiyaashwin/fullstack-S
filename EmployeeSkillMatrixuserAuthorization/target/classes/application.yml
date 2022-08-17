@@ -1,0 +1,21 @@
+server:
+  port: 2025
+  
+spring:
+  datasource:
+      url: jdbc:oracle:thin:@10.90.1.107:1521/SIT
+      username: HR
+      password: HR
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+security:
+  oauth2:    
+    resource:
+      token-info-uri: http://localhost:4040/oauth/check_token
+    client:  
+      client-id: pavi123   
+      client-secret: pavithra
